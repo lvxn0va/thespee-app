@@ -1,0 +1,42 @@
+development: &non_production_settings
+  :stripe:
+    :app_key: "xxx"
+    :app_secret: "xxx"
+  :twitter:
+    :consumer_key: "xxx"
+    :consumer_secret: "xxx"
+  :linkedin:
+    :api_key: "xxx"
+    :secret_key: "xxx"
+  facebook_app_id: "xxx"
+  facebook_secret: "xxx"
+  :airbrake:
+    :app_key: "xxx"
+  :mailchimp:
+    :api_key: "xxx"
+  :gmail:
+    :username: "xxx"
+    :password: "xxx"
+
+test:
+  <<: *non_production_settings
+
+production:
+  :stripe:
+    :app_key: "xxx"
+    :app_secret: "xxx"
+  :twitter:
+    :consumer_key: "xxx"
+    :consumer_secret: "xxx"
+  :linkedin:
+    :api_key: "xxx"
+    :secret_key: "xxx"
+  facebook_app_id: "xxx"
+  facebook_secret: "xxx"
+  :airbrake:
+    :app_key: "xxx"
+  :mailchimp:
+    :api_key: "xxx"
+  :gmail:
+    :username: "xxx"
+    :password: "xxx"
