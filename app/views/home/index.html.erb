@@ -1,4 +1,30 @@
-<h3>Home</h3>
-<% @users.each do |user| %>
-  <p>User: <%=link_to user.name, user %></p>
-<% end %>
+<div id="welcome" class="hero-unit span7">
+  <h1>Thesp[ee]</h1>
+  <h3>Do one thing for your acting everyday</h3>
+</div>
+<div class="row span8 plans">
+  <div class="span2 well">
+    <div class="plan"><h2>Monthly</h2></div>
+    <ul class="unstyled">
+      <li>Monthly access to Thesp[ee]</li>
+    </ul>
+    <h3>$9/month</h3>
+    <%= link_to 'Subscribe', content_monthly_path, :class => 'btn btn-primary' %> 
+  </div>
+  <div class="span2 well featured">
+    <div class="plan featured-plan"><h2>Quarterly</h2></div>
+    <ul class="unstyled">
+      <li>Quarterly access to Thesp[ee]</li>
+    </ul>
+    <h3>$19/month</h3>
+    <%= link_to 'Subscribe', content_quarterly_path, :class => 'btn btn-primary' %> 
+  </div>
+  <div class="span2 well">
+    <div class="plan"><h2>Yearly</h2></div>
+    <ul class="unstyled">
+      <li>Yearly access to Thesp[ee]</li>
+    </ul>
+    <h3>$29/month</h3>
+    <%= link_to 'Subscribe', content_yearly_path, :class => 'btn btn-primary' %> 
+  </div>
+</div>
