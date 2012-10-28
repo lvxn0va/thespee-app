@@ -1,4 +1,10 @@
 ThespeeApp::Application.routes.draw do
+  get "content/monthly"
+
+  get "content/quarterly"
+
+  get "content/yearly"
+
   authenticated :user do
     root :to => 'home#index'
   end
