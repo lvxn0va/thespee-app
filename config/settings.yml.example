@@ -1,7 +1,6 @@
 development: &non_production_settings
-  :stripe:
-    :app_key: "xxx"
-    :app_secret: "xxx"
+  STRIPE_API_KEY: "xxx"
+  STRIPE_PUBLIC_KEY: "xxx"
   :twitter:
     :consumer_key: "xxx"
     :consumer_secret: "xxx"
@@ -22,9 +21,8 @@ test:
   <<: *non_production_settings
 
 production:
-  :stripe:
-    :app_key: "xxx"
-    :app_secret: "xxx"
+  STRIPE_API_KEY: "xxx"
+  STRIPE_PUBLIC_KEY: "xxx"
   :twitter:
     :consumer_key: "xxx"
     :consumer_secret: "xxx"
