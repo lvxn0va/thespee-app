@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/littlebtc/font-awesome-sass-rails.git
+  revision: 5d2ab2a35e3817e995c646e2c33f6fc05a477777
+  specs:
+    font-awesome-sass-rails (2.0.0.0)
+      railties (>= 3.1.1)
+      sass-rails (>= 3.1.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -196,6 +204,7 @@ DEPENDENCIES
   devise (>= 2.1.2)
   email_spec (>= 1.2.1)
   factory_girl_rails (>= 4.1.0)
+  font-awesome-sass-rails!
   hub (>= 1.10.2)
   jquery-rails
   launchy (>= 2.1.2)

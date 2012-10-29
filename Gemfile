@@ -26,3 +26,5 @@ gem "hub", ">= 1.10.2", :require => nil, :group => [:development]
 #Payments
 gem 'stripe'
 gem 'stripe_event'
+
+gem 'font-awesome-sass-rails', :git => 'https://github.com/littlebtc/font-awesome-sass-rails.git'

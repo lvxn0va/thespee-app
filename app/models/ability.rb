@@ -6,9 +6,9 @@ class Ability
     if user.has_role? :admin
       can :manage, :all
     else
-      can :read, :all if user.has_role? :monthly
-      can :read, :all if user.has_role? :quarterly
-      can :read, :all if user.has_role? :yearly
+      can :view, :monthly if user.has_role? :monthly
+      can :view, :quarterly if user.has_role? :quarterly
+      can :view, :yearly if user.has_role? :yearly
     end
     # Define abilities for the passed in user here. For example:
     #
