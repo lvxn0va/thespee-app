@@ -1,4 +1,6 @@
 ThespeeApp::Application.routes.draw do
+  mount StripeEvent::Engine => '/stripe'
+  
   get "content/monthly"
 
   get "content/quarterly"
