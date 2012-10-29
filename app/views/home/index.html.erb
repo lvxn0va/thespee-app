@@ -6,25 +6,28 @@
   <div class="span2 well">
     <div class="plan"><h2>Monthly</h2></div>
     <ul class="unstyled">
-      <li>Monthly access to Thesp[ee]</li>
+      <li>You get full access to Thesp[ee] reviews</li>
     </ul>
-    <h3>$9/Mo.</h3>
-    <%= link_to 'Subscribe', content_monthly_path, :class => 'btn btn-primary' %> 
+    <h5>One Month For:</h5>
+    <h1>$6</h1>
+    <%= link_to 'Subscribe', new_user_registration_path(:plan => 'monthly'), :class => 'btn btn-primary' %> 
   </div>
   <div class="span2 well featured">
     <div class="plan featured-plan"><h2>Quarterly</h2></div>
     <ul class="unstyled">
-      <li>Quarterly access to Thesp[ee]</li>
+      <li>You get full access to Thesp[ee] reviews</li>
     </ul>
-    <h3>$19/Three Mo.</h3>
-    <%= link_to 'Subscribe', content_quarterly_path, :class => 'btn btn-primary' %> 
+    <h5>Three Months For:</h5>
+    <h1>$15</h1>
+    <%= link_to 'Subscribe', new_user_registration_path(:plan => 'quarterly'), :class => 'btn btn-primary' %> 
   </div>
   <div class="span2 well">
     <div class="plan"><h2>Yearly</h2></div>
     <ul class="unstyled">
-      <li>Yearly access to Thesp[ee]</li>
+      <li>You get full access to Thesp[ee] reviews</li>
     </ul>
-    <h3>$29/Yr.</h3>
-    <%= link_to 'Subscribe', content_yearly_path, :class => 'btn btn-primary' %> 
+    <h5>Twelve Months For:</h5>
+    <h1>$60</h1>
+    <%= link_to 'Subscribe', new_user_registration_path(:plan => 'yearly'), :class => 'btn btn-primary' %> 
   </div>
 </div>
