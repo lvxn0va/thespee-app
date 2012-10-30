@@ -1,4 +1,6 @@
 ThespeeApp::Application.routes.draw do
+  resources :schools
+
   mount StripeEvent::Engine => '/stripe'
   
   get "content/monthly"
