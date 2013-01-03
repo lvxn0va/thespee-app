@@ -6,7 +6,7 @@ class SchoolsController < ApplicationController
   def index
     @schools = School.all
 
-    @json = School.all.to_gmaps4rails
+    @markers = School.all.to_gmaps4rails
 
     respond_to do |format|
       format.html # index.html.erb
@@ -19,7 +19,7 @@ class SchoolsController < ApplicationController
   def show
     @school = School.find(params[:id])
 
-    @json = @school.to_gmaps4rails
+    @marker = @school.to_gmaps4rails
 
     respond_to do |format|
       format.html # show.html.erb

@@ -493,10 +493,11 @@ section {
 /*#Schools
 ================================================== */
 #school-title h1 {
-    font-weight: 200;
+    font-weight: bold;
+    font-family: oswald;
     text-transform: uppercase;
-    font-color: #e3714d;
-    line-height: 50px;
+    color: #e3714d;
+    line-height: 30px;
         }
 #school-title h3 {
     font-weight: 200;
@@ -505,7 +506,23 @@ section {
     line-height: 50px;
 }
 #school_title a {
-    color: #e3714d;
+    font-color: #e3714d;
+}
+
+#school-body .container {
+    background-color:#DDDDDD;
+    margin:20px 0;
+    padding:10px;
+}
+
+#school-body h4 {
+    margin: 10px;
+    font-family: oswald;
+    text-transform: uppercase;
+}
+
+#school-body p {
+    margin: 10px;
 }
 
 /* #Blog

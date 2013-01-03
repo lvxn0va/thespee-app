@@ -17,6 +17,10 @@ class School < ActiveRecord::Base
 	"#{self.street}, #{self.city}, #{self.zip}" 
   end
 
+  def gmaps4rails_infowindow
+      "<h4>#{self.name}</h4><p>#{self.street}</p>"
+  end
+
   def geocode?
   (!address.blank? && (lat.blank? || lng.blank?)) || address_changed?
   end

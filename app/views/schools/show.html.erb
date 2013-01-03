@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
   <div id= "school-title">
-    <h1><a><%= @school.name %></a></h1>
+    <h1><%= @school.name %></h1>
   </div>
 
   <p class="lead">
@@ -18,12 +18,14 @@
   </address>
 
   <div>
-      <%= gmaps4rails(@json) %>
+      <%= gmaps4rails(@marker) %>
   </div>
 
-  <div>
-    <h4><%= @school.name %>:</h4><br/>
-    <%= @school.long_description %>
+  <div id="school-body">
+    <div class="container">
+      <h4><%= @school.name %></h4>
+      <p><%= @school.long_description %></p>
+    </div>
   </div>
 
   <p>
@@ -45,7 +47,6 @@
     <b>Price:</b>
     <%= @school.price %>
   </p>
-</school_info>
 
 
 
