@@ -1,22 +1,68 @@
-<%= link_to "Thespee App", root_path, :class => 'brand' %>
-<ul class="nav">
-  <% if user_signed_in? %>
-    <li>
-    <%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %>        
-    </li>
-  <% else %>
-    <li>
-    <%= link_to 'Login', new_user_session_path %>  
-    </li>
-  <% end %>
-  <% if user_signed_in? %>
-    <li>
-    <%= link_to 'Edit account', edit_user_registration_path %>
-    </li>
-    <% if current_user.has_role? :admin %>
-      <li>
-      <%= link_to 'Admin', users_path %>
-      </li>
-    <% end %>
-  <% end %>
-</ul>
+<div class="row">
+     <div class="span4">
+         <div  class="logo">
+             <h3><a href="index.html">THESP [EE]</a> <small>Verified Reviews</small></h3>
+         </div>
+     </div>
+     <div class="span8">
+         <div class="menu">
+             <ul class="main-menu">
+        <li>
+          <%= link_to 'Home', home_path %>
+        </li>
+		<% if user_signed_in? %>
+		   <li>
+		   <%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %>        
+		   </li>
+		 <% else %>
+		   <li>
+		   <%= link_to 'Login', new_user_session_path %>  
+		   </li>
+		 <% end %>
+		 <% if user_signed_in? %>
+		   <li>
+		   <%= link_to 'Edit account', edit_user_registration_path %>
+		   </li>
+		   <% if current_user.has_role? :admin %>
+		     <li>
+		     <%= link_to 'Admin', users_path %>
+		     </li>
+		   <% end %>
+		 <% end %>
+          <li><%= link_to 'Schools', schools_path %></li>
+ 		    	<li><a href="about.html">About Us</a></li>
+  		    <li><a href="docs/index.html">Features</a>
+   		    <ul>
+    		    <li><a href="docs/base-css.html">Base CSS</a></li>
+		    	<li><a href="docs/components.html">Components</a></li>
+   			    <li><a href="p_table.html">Pricing Tables</a></li>
+    			<li><a href="gallery.html">Photo Gallery</a></li>
+  		    		<li><a href="docs/javascript.html">JavaScript</a></li>
+   		    	<li><a href="#">Third Level Item <i class="icon-caret-right pull-right"></i></a>
+       				<ul>
+        				<li><a href="#">Just an example</a></li>
+	        			<li><a href="#">Of a third level</a></li>
+		        		<li><a href="#">Dropdown link</a></li>
+ 		        </ul>
+ 						</li>
+     				</ul>
+      		</li>
+       	<li><a href="portfolio.html">Portfolio</a>
+        	<ul>
+         	<li><a href="portfolio.html">3 Columns - Default</a></li>
+ 			    		<li><a href="portfolio_4_columns.html">4 Columns</a></li>
+  			    	<li><a href="portfolio_2_columns.html">2 Columns</a></li>
+     		<li><a href="portfolio_item.html">Portfolio Single Item</a></li>
+     				</ul>
+      		</li>
+       	<li><a href="blog.html">Blog</a>
+    		<ul>
+ 			    		<li><a href="blog.html">Default Layout</a></li>
+   			    <li><a href="blog_post.html">Single Post Item</a></li>
+	        </ul>
+   		</li>
+ 		    	<li><a href="contact.html">Contact</a></li>
+       </ul>
+         </div>
+     </div>
+ </div>

@@ -1,0 +1,299 @@
+<div id="main">
+    <div class="container">
+        <div class="row">
+            <section id="page-title" class="message-container span12">
+                <h1>Welcome to Thesp[EE]</h1>
+                <h3>Do one thing for your acting every single day..</h3>
+                <hr>
+            </section>
+            <section id="slideshow"  class="span12">
+                 <div class="carousel-wrapper">
+                    <div id="myCarousel" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="active item">
+                                <%= image_tag "slide/slide_1.jpg" %>
+                                <div class="carousel-caption">
+                                    <h3>First Thumbnail label</h3>
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                </div>                                    
+                            </div>
+                            <div class="item">
+								<%= image_tag "slide/slide_2.jpg" %>
+                                <div class="carousel-caption">
+                                    <h3>Second Thumbnail label</h3>
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                </div>                                    
+                            </div>
+                            <div class="item">
+                                <%= image_tag "slide/slide_3.jpg" %>
+                                <div class="carousel-caption">
+                                    <h3>Third Thumbnail label</h3>
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                </div>                                    
+                            </div>
+                            <div class="item">
+                                <%= image_tag "slide/slide_4.jpg" %>
+                                <div class="carousel-caption">
+                                    <h3>Fourth Thumbnail label</h3>
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                </div>                                    
+                            </div>
+                            <div class="item">
+                                <%= image_tag "slide/slide_5.jpg" %>
+                                <div class="carousel-caption">
+                                    <h3>Fifth Thumbnail label</h3>
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                </div>                                    
+                            </div>
+                        </div>
+                        <!-- Carousel nav -->
+                        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                    </div>
+                </div>
+            </section>
+            <section id="our-experience" class="span12">
+                <div class="row">
+                    <div class="span3">
+                        <div class="experience-icon">
+                            <i class="icon-columns"></i>
+                        </div>
+                        <h4 class="section-title">Responsive Layout</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                    </div>
+                    <div class="span3">
+                        <div class="experience-icon">
+                            <i class="icon-leaf"></i>
+                        </div>
+                        <h4 class="section-title">HTML5 and CSS3</h4>
+                        <p>Pellentesque ornare, risus et vulputate mollis, massa nulla aliquam neque, sed hendrerit orci quam eget ante. Morbi pulvinar ligula at sapien ultricies hendrerit. Pellentesque ornare, risus et vulputate mollis, massa nulla aliquam neque, sed hendrerit orci quam eget ante aliquam neque.</p>
+                    </div>
+                    <div class="span3">
+                        <div class="experience-icon">
+                            <i class="icon-cogs"></i>
+                        </div>
+                        <h4 class="section-title">Easily Customization</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                    </div>
+                    <div class="span3">
+                        <div class="experience-icon">
+                            <i class="icon-heart-empty"></i>
+                        </div>
+                        <h4 class="section-title">Clean Design</h4>
+                        <p>Pellentesque ornare, risus et vulputate mollis, massa nulla aliquam neque, sed hendrerit orci quam eget ante. Morbi pulvinar ligula at sapien ultricies hendrerit. Pellentesque ornare, risus et vulputate mollis, massa nulla aliquam neque, sed hendrerit orci quam eget ante aliquam neque.</p>
+                    </div>
+                </div>
+            </section>
+			
+			<section id="p-table" class="span12">
+                <div class="row">
+                    <div class="pricing-table package-one span4">
+		                <div class="title">Monthly</div>
+		                <div class="price">$6<span>per month</span></div>
+		                <ul class="package">
+		                	<li>Full Access</li>
+							<li>Read AND Post Reviews</li>
+		                	<li>Month to Month</li>
+		                	<li>No Contract</li>
+		                	<li><strong>Cancel Anytime</strong></li>
+		                </ul>
+						<div class="action"><%= link_to 'Subscribe', new_user_registration_path(:plan => 'monthly'), :class => 'btn' %></div>
+	                </div>
+	                <div class="pricing-table package-two span4">
+	                	<div class="title">Quarterly</div>
+	                	<div class="price">$15<span>per 3-Mos.</span></div>
+		                <ul class="package">
+		                	<li>Full Access</li>
+							<li>Read AND Post Reviews</li>
+		                	<li>3 Months</li>
+		                	<li>No Contract</li>
+		                	<li><strong>Save 15% off the monthly plan!</strong></li>
+		                </ul>
+		                <div class="action"><%= link_to 'Subscribe', new_user_registration_path(:plan => 'quarterly'), :class => 'btn' %></div>
+	                </div>
+	                <div class="pricing-table package-three span4 columns">
+		                <div class="title">Yearly</div>
+		                <div class="price">$60<span>per year</span></div>
+		                <ul class="package">
+			                <li>Full Access</li>
+							<li>Read AND Post Reviews</li>
+		                	<li>12 Full Months</li>
+		                	<li>No Contract</li>
+		                	<li><strong>2 Months FREE!</strong></li>
+		                </ul>
+		                <div class="action"><%= link_to 'Subscribe', new_user_registration_path(:plan => 'yearly'), :class => 'btn' %></div>
+	                </div>
+                </div>
+            </section>
+            <section id="our-work" class="span12">
+                <h4 class="section-title">RECENT WORKS<small> - Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</small></h4>
+                <hr>
+                <div id="work-items" class="row">                                               
+                    <div class="media-box span4">
+                        <div class="view view-first">
+                            <a href=""><%= image_tag "work/work_1.jpg" %></a>
+                            <div class="mask">
+                                <h4><a href="" title="">A beautiful building</a></h4>
+                                <p><a href="">Art</a></p>
+                                <a href="work/work_1.jpg" class="lightbox-link folio" rel="prettyPhoto[pp_gal]"></a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="media-box span4">
+                        <div class="view view-first">
+                            <a href=""><%= image_tag "work/work_2.jpg" %></a>
+                            <div class="mask">
+                                <h4><a href="" title="">Girl in the forest</a></h4>
+                                <p><a href="">Photography</a></p>
+                                <a href="images/work/work_2.jpg" class="lightbox-link folio" rel="prettyPhoto[pp_gal]"></a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="media-box span4">
+                        <div class="view view-first">
+                            <a href=""><%= image_tag "work/work_3.jpg" %></a>
+                            <div class="mask">
+                                <h4><a href="" title="">Girl in the house</a></h4>
+                                <p><a href="">Photography</a></p>
+                                <a href="images/work/work_3.jpg" class="lightbox-link folio" rel="prettyPhoto[pp_gal]"></a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="media-box span4">
+                        <div class="view view-first">
+                            <a href=""><%= image_tag "work/work_4.jpg" %></a></a>
+                            <div class="mask">
+                                <h4><a href="" title="">Lovely Deer</a></h4>
+                                <p><a href="">Nature</a></p>
+                                <a href="work/work_4.jpg" class="lightbox-link folio" rel="prettyPhoto[pp_gal]"></a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="media-box span4">
+                        <div class="view view-first">
+                            <a href=""><%= image_tag "work/work_5.jpg" %></a></a>
+                            <div class="mask">
+                                <h4><a href="" title="">Lovely girl</a></h4>
+                                <p><a href="">Photography</a></p>
+                                <a href="work/work_5.jpg" class="lightbox-link folio" rel="prettyPhoto[pp_gal]"></a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="media-box span4">
+                        <div class="view view-first">
+                            <a href=""><%= image_tag "work/work_6.jpg" %></a></a>
+                            <div class="mask">
+                                <h4><a href="" title="">The girl</a></h4>
+                                <p><a href="">Photography</a></p>
+                                <a href="work/work_6.jpg" class="lightbox-link folio" rel="prettyPhoto[pp_gal]"></a>
+                            </div>
+                        </div>
+                    </div>                           
+                </div>        
+            </section> 
+            <section id="our-article" class="span12">
+                <h4 class="section-title">RECENT FROM BLOG<small> - Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</small></h4>
+                <hr>
+                <div class="row">
+                    <div class="blog-post span3">
+                        <div class="view-first">
+                            <a href=""><%= image_tag "blog/blog_1.jpg" %></a>
+                        </div>
+                        <div class="article-title">
+                            <h5 class="blog-title"><span class="squre circle-black"><i class="icon-file"></i></span><a href="">Built with Twitter Bootstrap</a></h5>
+                        </div>
+                        <div class="article-date">
+                            <p>25 mar 2012</p>
+                        </div>
+                        <div class="article-description">
+                            <p>Pellentesque ornare, risus et vulputate mollis, massa nulla aliquam neque, sed hendrerit orci quam eget ante. Morbi pulvinar ligula at sapien.</p>
+                        </div>
+                    </div>
+                    <div class="blog-post span3">
+                        <div class="post">
+                         <div id="myCarousel1" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="active item"><%= image_tag "blog/blog_4.jpg" %></div>
+                            <div class="item"><%= image_tag "blog/blog_2.jpg" %></div>
+                            <div class="item"><%= image_tag "blog/blog_3.jpg" %></div>
+                        </div>
+                        <!-- Carousel nav -->
+                        <a class="carousel-control left" href="#myCarousel1" data-slide="prev">&lsaquo;</a>
+                        <a class="carousel-control right" href="#myCarousel1" data-slide="next">&rsaquo;</a>
+                        </div>
+                        </div>
+                        <div class="article-title">
+                            <h5 class="blog-title"><span class="squre circle-black"><i class="icon-picture"></i></span><a href="">It's a simple gallery post</a></h5>
+                        </div>
+                        <div class="article-date">
+                            <p>25 mar 2012</p>
+                        </div>
+                        <div class="article-description">
+                            <p>Pellentesque ornare, risus et vulputate mollis, massa nulla aliquam neque, sed hendrerit orci quam eget ante. Morbi pulvinar ligula at sapien.</p>
+                        </div>
+                    </div>
+                    <div class="blog-post span3">
+                        <div class="view-first">
+                            <a href=""><%= image_tag "blog/blog_3.jpg" %></a>
+                        </div>
+                        <div class="article-title">
+                            <h5 class="blog-title"><span class="squre circle-black"><i class="icon-camera"></i></span><a href="">I love this beautiful picture</a></h5>
+                        </div>
+                        <div class="article-date">
+                            <p>25 mar 2012</p>
+                        </div>
+                        <div class="article-description">
+                            <p>Pellentesque ornare, risus et vulputate mollis, massa nulla aliquam neque, sed hendrerit orci quam eget ante. Morbi pulvinar ligula at sapien.</p>
+                        </div>
+                    </div>
+                    <div class="blog-post span3">
+                        <div class="view-first">
+                            <div class="vimeo-video">
+                                <iframe src="http://player.vimeo.com/video/40487907" width="680" height="383" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>                           
+                            </div>
+                        </div>
+                        <div class="article-title">
+                            <h5 class="blog-title"><span class="squre circle-black"><i class="icon-facetime-video"></i></span><a href="">It's an interesting video</a></h5>
+                        </div>
+                        <div class="article-date">
+                            <p>25 mar 2012</p>
+                        </div>
+                        <div class="article-description">
+                            <p>Pellentesque ornare, risus et vulputate mollis, massa nulla aliquam neque, sed hendrerit orci quam eget ante. Morbi pulvinar ligula at sapien.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="our-partner" class="span12">
+                <h4 class="section-title">PARTNERS<small> - Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</small></h4>
+                <hr>
+                <div class="row">
+                    <div class="span3">
+                        <div class="view-first">
+                            <a href=""><%= image_tag "partners/partners_1.jpg" %></a>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="view-first">
+                            <a href=""><%= image_tag "partners/partners_2.jpg" %></a>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="view-first">
+                            <a href=""><%= image_tag "partners/partners_4.jpg" %></a>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div class="view-first">
+                            <a href=""><%= image_tag "partners/partners_3.jpg" %></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<div>
+  <%= render 'layouts/footer' %>
+</div>

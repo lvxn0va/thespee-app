@@ -1,8 +1,12 @@
 class SchoolsController < ApplicationController
+  load_and_authorize_resource
+  skip_authorize_resource :only => :index
   # GET /schools
   # GET /schools.json
   def index
     @schools = School.all
+
+    @json = School.all.to_gmaps4rails
 
     respond_to do |format|
       format.html # index.html.erb
@@ -15,6 +19,8 @@ class SchoolsController < ApplicationController
   def show
     @school = School.find(params[:id])
 
+    @json = @school.to_gmaps4rails
+
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @school }
@@ -24,6 +30,7 @@ class SchoolsController < ApplicationController
   # GET /schools/new
   # GET /schools/new.json
   def new
+
     @school = School.new
 
     respond_to do |format|
@@ -35,6 +42,7 @@ class SchoolsController < ApplicationController
   # GET /schools/1/edit
   def edit
     @school = School.find(params[:id])
+    @category = Category.find(:all)
   end
 
   # POST /schools

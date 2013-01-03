@@ -2,10 +2,14 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.8'
 gem 'rake', '>= 0.9.2.2'
 gem 'sqlite3'
+gem 'thin'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
+  gem 'font-awesome-sass-rails'
+  gem 'twitter-bootstrap-rails'
+  gem "less"
 end
 gem 'jquery-rails'
 gem "rspec-rails", ">= 2.11.4", :group => [:development, :test]
@@ -22,9 +26,15 @@ gem "rolify", ">= 3.2.0"
 gem "simple_form", ">= 2.0.4"
 gem "quiet_assets", ">= 1.0.1", :group => :development
 gem "hub", ">= 1.10.2", :require => nil, :group => [:development]
+gem "less-rails"
+gem "execjs", "1.4.0"
+gem "therubyracer", "0.10.2"
+
+#Google Maps
+gem 'gmaps4rails'
+gem 'geocoder'
 
 #Payments
 gem 'stripe'
 gem 'stripe_event'
 
-gem 'font-awesome-sass-rails', :git => 'https://github.com/littlebtc/font-awesome-sass-rails.git'

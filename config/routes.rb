@@ -1,4 +1,6 @@
 ThespeeApp::Application.routes.draw do
+  resources :categories
+
   resources :schools
 
   mount StripeEvent::Engine => '/stripe'
@@ -10,9 +12,9 @@ ThespeeApp::Application.routes.draw do
   get "content/yearly"
 
   authenticated :user do
-    root :to => 'home#index'
+    root :to => 'home#main', :as => :home
   end
-  root :to => "home#index"
+  root :to => "home#main", :as => :home
   devise_for :users, :controllers => { :registrations => 'registrations' }
   resources :users
 end

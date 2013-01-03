@@ -75,6 +75,9 @@ module ThespeeApp
 
     # Enable the asset pipeline
     config.assets.enabled = true
+    # add app/assets/fonts to the asset path
+    #config.assets.paths << Rails.root.join("app", "assets", "fonts")
+    config.assets.paths << Rails.root.join("app", "assets", "img")
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'

@@ -1,9 +1,13 @@
 @import "bootstrap";
+@import "font-awesome";
 body { padding-top: 60px; }
 @import "bootstrap-responsive";
-@import "font-awesome";
-@import url(https://fonts.googleapis.com/css?family=Ubuntu);
-@import "journal_bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Oswald&#038;ver=3.3.2);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700);
+@import "prettyPhoto";
+@import "custom-style";
+
+
 
 //FONT-AWESOME Icon Overrides
 [class^="icon-"], [class*=" icon-"]{
@@ -38,4 +42,11 @@ body { padding-top: 60px; }
   font-size: 1.333em;
   vertical-align: text-top;
   margin-top: 4px;
+}
+
+#map img { 
+  max-width: none;
+}
+#map label { 
+  width: auto; display:inline; 
 }
