@@ -19,11 +19,15 @@ class SchoolsController < ApplicationController
   def show
     @school = School.find(params[:id])
 
+    if request.path != school_path(@school)
+      redirect_to @school, status: :moved_permanently
+    end
+
     @marker = @school.to_gmaps4rails
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @school }
+      #format.json { render json: @school }
     end
   end
 

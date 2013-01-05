@@ -29,6 +29,7 @@ gem "hub", ">= 1.10.2", :require => nil, :group => [:development]
 gem "less-rails"
 gem "execjs", "1.4.0"
 gem "therubyracer", "0.10.2"
+gem 'friendly_id'
 
 #Google Maps
 gem 'gmaps4rails'

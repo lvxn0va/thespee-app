@@ -1,4 +1,7 @@
 class School < ActiveRecord::Base
+  extend FriendlyId
+  friendly_id :name, use: [:slugged, :history]
+
   belongs_to :category
 
   acts_as_gmappable   :latitude => 'latitude', :longitude => 'longitude', :process_geocoding => true,

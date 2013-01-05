@@ -85,6 +85,7 @@ GEM
     font-awesome-sass-rails (2.0.0.0)
       railties (>= 3.1.1)
       sass-rails (>= 3.1.1)
+    friendly_id (4.0.7)
     geocoder (1.1.6)
     gherkin (2.11.5)
       json (>= 1.4.6)
@@ -223,6 +224,7 @@ DEPENDENCIES
   execjs (= 1.4.0)
   factory_girl_rails (>= 4.1.0)
   font-awesome-sass-rails
+  friendly_id
   geocoder
   gmaps4rails
   hub (>= 1.10.2)
